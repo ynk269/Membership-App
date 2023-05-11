@@ -1,11 +1,5 @@
 from typing import Dict
-from dataclasses import dataclass
-
-@dataclass
-class Membership:
-    typeOfMembership: str
-    discount: float
-    fees: float
+from membership import Membership
 
 class MembershipFactory:
     def __init__(self):

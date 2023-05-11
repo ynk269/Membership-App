@@ -12,5 +12,11 @@ class Company:
     def get_customers(self):
         return self.customers
     
+    def add_customers(self, customer):
+        self.customers.append(customer)
+
     def set_customers(self, customers):
-        self.customers = customers
+        self.customers = []
+        for customer in customers:
+            self.customers.append(customer)
+        
